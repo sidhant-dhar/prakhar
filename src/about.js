@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './about.css';
 import { Row, Col } from 'react-bootstrap';
-import about1 from './assets/aboutus.jpg'
-import about2 from './assets/abt-us.jpg'
-import about3 from './assets/abtus.jpg'
+import about1 from './assets/about/aboutus.jpg'
+import about2 from './assets/about/abt-us.jpg'
+import about3 from './assets/about/abtus.jpg'
 class About extends Component {
     render() {
         return (
