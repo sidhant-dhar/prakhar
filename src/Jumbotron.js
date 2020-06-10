@@ -8,7 +8,7 @@ class Jumbo extends Component {
     
     render() {
         return (
-            <div>
+            <React.Fragment>
             <Jumbotron className = "jumbo mb-0" fluid>
           
           </Jumbotron>
@@ -19,7 +19,7 @@ class Jumbo extends Component {
             specialists with varied interests &amp; expertise in the field of education.
             </p>
         </div>
-        </div>
+        </React.Fragment>
         )
     }
 }

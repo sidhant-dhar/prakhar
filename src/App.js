@@ -7,20 +7,22 @@ import Registration from './registration';
 import Container from 'react-bootstrap/Container'
 import About from './about';
 import Footer from './footer';
+import Team from './team';
+import poster from './assets/poster.jpeg'
 
 function App() {
   return (
-    <div className="">
-      <Container fluid className = 'p-0'>
+      <Container fluid className = 'p-0 m-0 overflow-hidden'>
       <NavBarComponent/>
       <Jumbo/>
-      {/* <Vision/> */}
+      <Vision/>
       <About/>
       <Registration/>
+      <img src = {poster} alt = 'poster'className = 'img-fluid w-100'/>
+      <Team/>
       <Footer/>
       </Container>
-    </div>
-  );
+   );
 }
 
 export default App;

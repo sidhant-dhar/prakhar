@@ -9,7 +9,7 @@ import location from './assets/footer/Location.svg'
 class Footer extends Component {
     render() {
         return (
-            <div className = 'background text-center'>
+            <div className = 'contact text-center'>
             <h1 className = 'footer-heading pt-4 mb-5'>Connect with Us</h1>
             <Row className = 'px-5 footer-bottom-line '>
                 <Col className = 'col-lg-6 col-12'><Contact/></Col>

@@ -1,6 +1,6 @@
 .vision{
    background-size: cover;
-   background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)) , url('./assets/vision.jpg') center center;
+   background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)) , url('./assets/vision/vision.jpg') center center;
    background-size: cover;
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -32,35 +32,10 @@ line-height: 27px;
    display: inline-block;
    content: "";
    border-top: 1px solid #FFF;
-   width: 30%;
+   width: 20%;
    height: 100px;
    margin: 0 2rem;
    transform: translateY(5rem);
 }
 
-.how-it-works::before{
-   border-left : 1px solid #FFF;
-}
 
-.how-it-works::after{
-   border-right: 1px solid #FFF;
-}
-
-.how-it-works-image::before,.how-it-works-image::after{
-   display: inline-block;
-   content: "";
-   border-top: 1px solid #FFF;
-   width: 5%;
-   margin: 0 2rem;
-   transform: translateY(-1rem);
-}
-
-hr {
-   border: 0;
-   clear:both;
-   display:block;               
-   background-color:#FFF;
-   width: 90%;
-   height: 1px;
-   margin-top: 1rem;;
- }
