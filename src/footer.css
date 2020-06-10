@@ -1,0 +1,60 @@
+.background{
+    background-color: #262626;
+    width: 100%;
+}
+
+.footer-heading{
+font-family: 'Open Sans';
+font-weight: 600;
+font-size: 40px;
+line-height: 54px;
+color: #FFF;
+}
+
+.footer-info{
+    color: white;
+}
+
+.footer-info > h6{
+font-family: 'Open Sans';
+font-weight: 600;
+line-height: 22px;
+color: #666666;
+}
+
+.footer-info > p {
+font-family: 'Open Sans';
+font-size: 16px;
+line-height: 22px;
+color: #989898;
+}
+
+.footer-info::after{
+    content: "";
+    display: block; 
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: 0.5px solid #666666;
+}
+
+.footer-bottom-line::after{
+    content: "";
+    display: block; 
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: 0.5px solid #666666;
+}
+
+.copyright{
+font-family: 'Open Sans';
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+color: #666666;
+}
+
+@media (min-width : 768px){
+    .vertical-line{
+        border-left:  0.5px solid #666666;;
+    }
+}

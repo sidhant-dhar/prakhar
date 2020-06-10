@@ -1,0 +1,78 @@
+.registration{
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)) , url('./assets/announces.jpg') center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: #FF0000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .registration-content{ 
+    font-family: 'Open Sans';
+ }
+ 
+ .registration-content > h1{
+ font-weight: bold;
+ line-height: 54px;
+ text-decoration-line: underline;
+ 
+ }
+ 
+ .registration-content > h2{
+    font-weight: 600;
+    font-size: 35px;
+    color: #FFF;
+    line-height: 48px;
+    
+}
+
+.registration-content > h2 > span {
+    color: #FF0000;
+}
+
+ .registration-content > p {
+ font-size: 20px;
+ line-height: 27px;
+ color: #FFF;
+ }
+
+ #announces{
+    font-style: italic;
+    font-size: 25px;
+    line-height: 34px;
+ }
+
+ .registration-box{
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+ }
+
+ .registration-box > h2 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 48px;
+    color: #FFF;
+ }
+
+ .registration-box > p {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 34px;
+    text-decoration-line: underline;    
+ }
+
+ .btn{
+    font-family: 'Open Sans' !important;
+ }
+
+ .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background: #827FF7 !important;
+    border-radius: 10px;
+}

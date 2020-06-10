@@ -1,0 +1,30 @@
+.form-wrapper{
+    display: table;
+    width: 90%;
+}
+
+.form-inliner{
+    display: table-row;
+}
+
+.form-label{
+display: table-cell;   
+font-family: 'Open Sans';
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+color: #989898;
+
+}
+
+.form-input{
+    display: table-cell;
+    background: #2C2C2C;   
+    border: 1px solid #666666;
+    border-radius: 5px;
+}
+
+#contact-textarea{
+    vertical-align: middle;
+
+}

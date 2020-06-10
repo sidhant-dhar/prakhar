@@ -1,0 +1,15 @@
+.about > h1{
+font-family: 'Open Sans';
+font-weight: bold;
+font-size: 40px;
+line-height: 54px;
+text-decoration-line: underline;
+color: #333333;
+}
+
+.about > p {
+font-family: 'Open Sans';
+font-size: 20px;
+line-height: 27px;
+color: #666666;
+}
