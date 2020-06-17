@@ -24,7 +24,7 @@ class Footer extends Component {
                         <h6 className = 'col-md-3 col-12'>Mail</h6>
                         <p className = 'col-md-9 col-12 text-left'>
                             <img src = {mail} height = '16' width = '16' className = 'mr-3' alt = 'mail icon'/>
-                            prakhar.kdm@gmail.com</p>
+                            prakhar.kbm@gmail.com</p>
                     </div>
                     <div className = 'row footer-info p-4 m-3'>
                         <h6 className = 'col-md-3 col-12'>Location</h6>

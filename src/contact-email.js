@@ -9,10 +9,23 @@ class Contact extends Component {
 
 
     state = {
-        name: '',
-        email:'',
-        phone:'',
-        message:''
+        name: null,
+        email:null,
+        phone:null,
+        message:null,
+        formValid: true,
+        // nameValid: false,
+        // emailValid: false,
+        // phoneVaid: false,
+         errorMessage : {},
+        // formValid: false
+    }
+
+    validateForm = () => {
+      const {nameValid, emailValid, phoneValid} = this.state;
+      this.setState({
+        formValid: nameValid && emailValid && phoneValid
+      })
     }
 
     handleChange = (param , event) => {
@@ -20,12 +33,19 @@ class Contact extends Component {
     }
 
     handleSubmit = (event) => {
-        event.preventDefault();
+      const {name , phone , email , message} = this.state;  
+      event.preventDefault();
         let templateParams = {
           user_name: this.state.name,
           user_email: this.state.email,
           user_phone: this.state.phone,
           message: this.state.message
+        }
+        if(name === null || name === '' || email === null || email === '' || phone === null || phone === '' || message === null || message === '') {
+          this.setState({
+            formValid : false
+          });
+          return;
         }
 
         emailjs.send(
@@ -53,10 +73,14 @@ class Contact extends Component {
 
     resetform = () => {
         this.setState({
-            name: '',
-            email:'',
-            phone:'',
-            message:''
+            name: null,
+            email: null,
+            phone: null,
+            message: null,
+            // emailValid: false,
+            // phoneVaid: false,
+            // errorMessage : {},
+             formValid: true  
         })
     }
 
@@ -103,6 +127,9 @@ class Contact extends Component {
             <Button variant="dark" type="submit" className = 'contact-button mt-lg-4 mt-2 mb-5'>
                 Submit
             </Button>
+            {!(this.state.formValid) && <Form.Text className = 'mutedText' muted>
+                    Please fill out all form fields.
+                  </Form.Text>}
           </Form>
             )
     }

@@ -1,4 +1,4 @@
-### Prakhar : Kindling Brilliant Minds
+# Prakhar : Kindling Brilliant Minds
 
 Prakhar is a NGO that works to upskill students and equip them with new age skills. We also host workshops, events etc. and have a host of skilled guest faculty who are all experts in their respective fields.
 

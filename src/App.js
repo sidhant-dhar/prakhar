@@ -1,26 +1,27 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import './App.css';
 import NavBarComponent from './navbar';
 import Jumbo from './Jumbotron';
-import Vision from './vision';
-import Registration from './registration';
-import Container from 'react-bootstrap/Container'
-import About from './about';
-import Footer from './footer';
-import Team from './team';
-import poster from './assets/poster.jpeg'
+import Container from 'react-bootstrap/Container';
+const Registration = lazy(() => import('./registration')); 
+const About = lazy(() => import('./about'));
+const Footer = lazy(() => import('./footer'));
+const Team = lazy(() => import('./team'));
+const Vision = lazy(() => import('./vision'));
 
 function App() {
   return (
       <Container fluid className = 'p-0 m-0 overflow-hidden'>
       <NavBarComponent/>
       <Jumbo/>
-      <Vision/>
-      <About/>
-      <Registration/>
-      <img src = {poster} alt = 'poster'className = 'img-fluid w-100'/>
-      <Team/>
-      <Footer/>
+      <Suspense fallback = {<h1>Still Loading....</h1>}>
+         <Vision/>
+         <About/>
+         <Registration/>
+         <Team/>
+         <Footer/>
+      </Suspense>
+      {/* <img src = {poster} alt = 'poster'className = 'img-fluid w-100'/> */}
       </Container>
    );
 }

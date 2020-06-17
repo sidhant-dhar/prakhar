@@ -15,7 +15,7 @@ class Jumbo extends Component {
             <div className = 'jumbo-content'>
             <h1>PRAKHAR</h1>
             <p>
-            A registered non-profit non-government organization (NGO) based in Delhi, work with top Indian experts / professionals / 
+            A non-profit non-government organization (NGO) based in Delhi, work with top Indian experts / professionals / 
             specialists with varied interests &amp; expertise in the field of education.
             </p>
         </div>

@@ -26,5 +26,8 @@ color: #989898;
 
 #contact-textarea{
     vertical-align: middle;
+}
 
+.mutedText{
+    color: royalblue;
 }

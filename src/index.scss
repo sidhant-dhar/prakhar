@@ -4,5 +4,9 @@
        url('./assets/fonts/OpenSans-Regular.ttf') format('truetype') 
 }
 
+html, body {
+  scroll-padding-top: 150px;
+}
+
 @import '~bootstrap/scss/bootstrap';
 
